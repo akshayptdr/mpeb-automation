@@ -1,9 +1,3 @@
-# Generated files
-*.png
-*.html
-mpeb_status.txt
-mpeb_check_log.txt
-
 # Python
 __pycache__/
 *.pyc
