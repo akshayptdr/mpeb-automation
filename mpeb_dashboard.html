@@ -223,11 +223,11 @@
         <div class="dashboard">
             <div class="stat-card total">
                 <h3>Total Runs</h3>
-                <div class="stat-value">2</div>
+                <div class="stat-value">4</div>
             </div>
             <div class="stat-card success">
                 <h3>Successes</h3>
-                <div class="stat-value">2</div>
+                <div class="stat-value">4</div>
             </div>
             <div class="stat-card failure">
                 <h3>Failures</h3>
@@ -244,7 +244,7 @@
             <div class="status-box success">
                 <div class="status-box-time">
                     <span class="status-indicator success"></span>
-                    2026-04-24 08:39:55
+                    2026-04-24 10:37:51
                 </div>
                 <div class="status-box-message">SUCCESS: Form Submitted Successfully - Details Page Reached</div>
             </div>
@@ -258,8 +258,20 @@
         
 
         <div class="logs-container">
-            <h2>Recent Activity Log (2 entries)</h2>
+            <h2>Recent Activity Log (4 entries)</h2>
             
+        <div class="log-entry">
+            <span class="log-time">[2026-04-24 10:37:51]</span>
+            <span class="log-status success">SUCCESS</span>
+            <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
+        </div>
+        
+        <div class="log-entry">
+            <span class="log-time">[2026-04-24 09:37:50]</span>
+            <span class="log-status success">SUCCESS</span>
+            <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
+        </div>
+        
         <div class="log-entry">
             <span class="log-time">[2026-04-24 08:39:55]</span>
             <span class="log-status success">SUCCESS</span>
@@ -275,7 +287,7 @@
         </div>
 
         <div class="refresh-time">
-            Last updated: 2026-04-24 09:03:18
+            Last updated: 2026-04-24 10:54:52
             <br>
             <em>Dashboard auto-refreshes in browser. Refresh page to update from log file.</em>
         </div>
@@ -287,11 +299,11 @@
         const chart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["2026-04-24 08:00"],
+                labels: ["2026-04-24 08:00", "2026-04-24 09:00", "2026-04-24 10:00"],
                 datasets: [
                     {
                         label: 'Successes',
-                        data: [2],
+                        data: [2, 1, 1],
                         borderColor: '#27ae60',
                         backgroundColor: 'rgba(39, 174, 96, 0.1)',
                         borderWidth: 2,
@@ -302,7 +314,7 @@
                     },
                     {
                         label: 'Failures',
-                        data: [0],
+                        data: [0, 0, 0],
                         borderColor: '#e74c3c',
                         backgroundColor: 'rgba(231, 76, 60, 0.1)',
                         borderWidth: 2,
