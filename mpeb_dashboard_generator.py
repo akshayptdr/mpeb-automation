@@ -422,6 +422,52 @@ def generate_log_entries_html(entries):
         """
     return html
 
+def push_to_github():
+    """Commit and push changes to GitHub"""
+    import subprocess
+
+    try:
+        # Check if there are changes
+        result = subprocess.run(
+            ["git", "status", "--porcelain"],
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+
+        if not result.stdout.strip():
+            print("  No changes to push")
+            return
+
+        # Add changes
+        subprocess.run(
+            ["git", "add", "mpeb_status.txt", "mpeb_dashboard.html"],
+            capture_output=True,
+            timeout=10
+        )
+
+        # Commit
+        subprocess.run(
+            ["git", "commit", "-m", f"Update dashboard and logs - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"],
+            capture_output=True,
+            timeout=10
+        )
+
+        # Push
+        result = subprocess.run(
+            ["git", "push", "origin", "master"],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+
+        if result.returncode == 0:
+            print("  ✓ Pushed to GitHub successfully")
+        else:
+            print(f"  ⚠ Git push failed: {result.stderr[:100]}")
+    except Exception as e:
+        print(f"  ⚠ GitHub push error: {str(e)[:100]}")
+
 def main():
     print("Generating MPEB Dashboard...")
 
@@ -446,6 +492,10 @@ def main():
     print(f"✓ Dashboard generated: {output_file}")
     print(f"\nOpen this file in your browser to view the dashboard:")
     print(f"  {output_file.absolute()}")
+
+    # Push to GitHub
+    print("\nPushing to GitHub...")
+    push_to_github()
 
 if __name__ == "__main__":
     main()
