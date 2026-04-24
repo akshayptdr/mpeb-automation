@@ -1,0 +1,18 @@
+# Generated files
+*.png
+*.html
+mpeb_status.txt
+mpeb_check_log.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

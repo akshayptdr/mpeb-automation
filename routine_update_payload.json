@@ -1,0 +1,26 @@
+{
+  "job_config": {
+    "ccr": {
+      "environment_id": "env_01FUDtwr9oHLJBQRwQs2RQYD",
+      "session_context": {
+        "model": "claude-sonnet-4-6",
+        "sources": [],
+        "allowed_tools": ["Bash", "Write"]
+      },
+      "events": [
+        {
+          "data": {
+            "uuid": "f6a7b8c9-d0e1-52f3-a4b5-c6d7e8f9a0b1",
+            "session_id": "",
+            "type": "user",
+            "parent_tool_use_id": null,
+            "message": {
+              "content": "Automate MPEB solar application check - COMPLETE FLOW with Playwright:\n\nStep 1: Setup\n- Import playwright async library\n- Launch headless Chromium: p.chromium.launch(headless=True, args=['--no-sandbox'])\n- Create page with 15 second timeout\n\nStep 2: Open Home Page\n- Navigate to: https://mpwzservices.mpwin.co.in/mpeb_english/home\n- Wait 2 seconds for page load\n\nStep 3: Click Rooftop Solar Applications Menu\n- Find element containing text 'Rooftop' (try multiple selectors)\n- Click the menu item\n- Wait 2 seconds\n\nStep 4: Click Roof Top Application Submenu\n- Find element with 'Application' text\n- Click it\n- Wait 3 seconds\n\nStep 5: Check Terms Checkbox\n- Find input[type='checkbox']\n- Click to check it\n- Wait 1 second\n\nStep 6: Click Agree and Continue Button\n- Find button containing 'Agree' or 'Continue' text\n- Click it\n- Wait 3 seconds\n\nStep 7: Enter IVRS Number\n- Find text input field (look for placeholder with 'LT' or 'Customer' or 'दाब')\n- Fill with: N3330008565\n- Wait 1 second\n\nStep 8: Click Submit Button\n- Find button with 'Submit' text\n- Click it\n- Wait 3 seconds\n\nStep 9: Verify Success\n- Check if applicant name field contains a value\n- Should see something like: GARIMA AKSHAY PATIDAR\n- Create log file mpeb_status.txt with format: [YYYY-MM-DD HH:MM:SS] STATUS: message\n- Status = SUCCESS if applicant name populated AND submit clicked\n- Status = FAILURE if any step fails or timeout occurs\n\nHandle timeouts gracefully (max 20 seconds per page load). Try multiple element selectors if primary fails.",
+              "role": "user"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
