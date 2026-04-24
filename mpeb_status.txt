@@ -4,4 +4,4 @@
 [2026-04-24 10:37:51] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-04-24 11:37:50] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-04-24 12:37:50] SUCCESS: Form Submitted Successfully - Details Page Reached
-[2026-04-24 13:37:50] FAILURE: Applicant name not populated
+[2026-04-24 13:37:50] SUCCESS: Form Submitted Successfully - Details Page Reached
