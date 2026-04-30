@@ -30,11 +30,11 @@ async def mpeb_complete_flow():
     async with async_playwright() as p:
         browser = None
         try:
-            # Launch visible browser
-            print("Launching Chromium browser (visible)...\n")
+            # Launch browser in headless mode (works for both scheduled and manual runs)
+            print("Launching Chromium browser (headless)...\n")
             browser = await p.chromium.launch(
-                headless=False,
-                args=["--no-sandbox"]
+                headless=True,
+                args=["--no-sandbox", "--disable-dev-shm-usage"]
             )
             page = await browser.new_page()
             page.set_default_timeout(25000)
@@ -422,8 +422,7 @@ async def mpeb_complete_flow():
             print(f"Dashboard: mpeb_dashboard.html")
             print("="*70)
 
-            print("\nBrowser will close in 20 seconds...")
-            await asyncio.sleep(20)
+            print("\nBrowser closing...")
 
             return applicant_name is not None
 
