@@ -223,7 +223,7 @@
         <div class="dashboard">
             <div class="stat-card total">
                 <h3>Total Runs</h3>
-                <div class="stat-value">57</div>
+                <div class="stat-value">58</div>
             </div>
             <div class="stat-card success">
                 <h3>Successes</h3>
@@ -231,22 +231,22 @@
             </div>
             <div class="stat-card failure">
                 <h3>Failures</h3>
-                <div class="stat-value">1</div>
+                <div class="stat-value">2</div>
             </div>
             <div class="stat-card rate">
                 <h3>Success Rate</h3>
-                <div class="stat-value">98.2%</div>
+                <div class="stat-value">96.6%</div>
             </div>
         </div>
 
         <div class="last-status">
             <h2>Last Run Status</h2>
-            <div class="status-box success">
+            <div class="status-box failure">
                 <div class="status-box-time">
-                    <span class="status-indicator success"></span>
-                    2026-05-01 11:15:05
+                    <span class="status-indicator failure"></span>
+                    2026-05-01 12:15:05
                 </div>
-                <div class="status-box-message">SUCCESS: Form Submitted Successfully - Details Page Reached</div>
+                <div class="status-box-message">FAILURE: Applicant name not populated</div>
             </div>
         </div>
 
@@ -258,8 +258,14 @@
         
 
         <div class="logs-container">
-            <h2>Recent Activity Log (57 entries)</h2>
+            <h2>Recent Activity Log (58 entries)</h2>
             
+        <div class="log-entry">
+            <span class="log-time">[2026-05-01 12:15:05]</span>
+            <span class="log-status failure">FAILURE</span>
+            <span class="log-message">Applicant name not populated</span>
+        </div>
+        
         <div class="log-entry">
             <span class="log-time">[2026-05-01 11:15:05]</span>
             <span class="log-status success">SUCCESS</span>
@@ -554,16 +560,10 @@
             <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
         </div>
         
-        <div class="log-entry">
-            <span class="log-time">[2026-04-24 14:37:50]</span>
-            <span class="log-status success">SUCCESS</span>
-            <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
-        </div>
-        
         </div>
 
         <div class="refresh-time">
-            Last updated: 2026-05-01 11:18:43
+            Last updated: 2026-05-01 12:15:46
             <br>
             <em>Dashboard auto-refreshes in browser. Refresh page to update from log file.</em>
         </div>
@@ -575,11 +575,11 @@
         const chart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["2026-04-24 08:00", "2026-04-24 09:00", "2026-04-24 10:00", "2026-04-24 11:00", "2026-04-24 12:00", "2026-04-24 13:00", "2026-04-24 14:00", "2026-04-24 15:00", "2026-04-24 16:00", "2026-04-25 08:00", "2026-04-25 09:00", "2026-04-25 10:00", "2026-04-25 11:00", "2026-04-25 12:00", "2026-04-25 13:00", "2026-04-25 14:00", "2026-04-25 15:00", "2026-04-25 16:00", "2026-04-27 08:00", "2026-04-27 09:00", "2026-04-27 10:00", "2026-04-27 11:00", "2026-04-27 12:00", "2026-04-27 13:00", "2026-04-27 14:00", "2026-04-27 15:00", "2026-04-27 16:00", "2026-04-28 08:00", "2026-04-28 09:00", "2026-04-28 10:00", "2026-04-28 11:00", "2026-04-28 12:00", "2026-04-28 13:00", "2026-04-28 14:00", "2026-04-28 15:00", "2026-04-28 16:00", "2026-04-28 17:00", "2026-04-29 08:00", "2026-04-29 15:00", "2026-04-29 17:00", "2026-04-30 09:00", "2026-04-30 12:00", "2026-04-30 13:00", "2026-04-30 14:00", "2026-04-30 15:00", "2026-04-30 16:00", "2026-04-30 17:00", "2026-05-01 08:00", "2026-05-01 09:00", "2026-05-01 10:00", "2026-05-01 11:00"],
+                labels: ["2026-04-24 08:00", "2026-04-24 09:00", "2026-04-24 10:00", "2026-04-24 11:00", "2026-04-24 12:00", "2026-04-24 13:00", "2026-04-24 14:00", "2026-04-24 15:00", "2026-04-24 16:00", "2026-04-25 08:00", "2026-04-25 09:00", "2026-04-25 10:00", "2026-04-25 11:00", "2026-04-25 12:00", "2026-04-25 13:00", "2026-04-25 14:00", "2026-04-25 15:00", "2026-04-25 16:00", "2026-04-27 08:00", "2026-04-27 09:00", "2026-04-27 10:00", "2026-04-27 11:00", "2026-04-27 12:00", "2026-04-27 13:00", "2026-04-27 14:00", "2026-04-27 15:00", "2026-04-27 16:00", "2026-04-28 08:00", "2026-04-28 09:00", "2026-04-28 10:00", "2026-04-28 11:00", "2026-04-28 12:00", "2026-04-28 13:00", "2026-04-28 14:00", "2026-04-28 15:00", "2026-04-28 16:00", "2026-04-28 17:00", "2026-04-29 08:00", "2026-04-29 15:00", "2026-04-29 17:00", "2026-04-30 09:00", "2026-04-30 12:00", "2026-04-30 13:00", "2026-04-30 14:00", "2026-04-30 15:00", "2026-04-30 16:00", "2026-04-30 17:00", "2026-05-01 08:00", "2026-05-01 09:00", "2026-05-01 10:00", "2026-05-01 11:00", "2026-05-01 12:00"],
                 datasets: [
                     {
                         label: 'Successes',
-                        data: [2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1],
+                        data: [2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 0],
                         borderColor: '#27ae60',
                         backgroundColor: 'rgba(39, 174, 96, 0.1)',
                         borderWidth: 2,
@@ -590,7 +590,7 @@
                     },
                     {
                         label: 'Failures',
-                        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
                         borderColor: '#e74c3c',
                         backgroundColor: 'rgba(231, 76, 60, 0.1)',
                         borderWidth: 2,
