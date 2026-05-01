@@ -56,3 +56,8 @@
 [2026-05-01 10:15:05] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-05-01 11:15:05] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-05-01 12:15:05] FAILURE: Applicant name not populated
+[2026-05-01 14:15:05] FAILURE: Error: Page.screenshot: Timeout 25000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
