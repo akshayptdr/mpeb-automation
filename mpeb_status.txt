@@ -130,3 +130,8 @@ Call log:
   - waiting for fonts to load...
 
 [2026-05-09 18:15:08] SUCCESS: Form Submitted Successfully - Details Page Reached
+[2026-05-11 08:21:08] FAILURE: Error: Page.screenshot: Timeout 25000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
