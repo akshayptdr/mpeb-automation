@@ -306,3 +306,9 @@ Call log:
 [2026-05-29 08:25:57] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-05-29 08:31:44] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-05-29 09:15:05] SUCCESS: Form Submitted - URL Navigation Confirmed
+[2026-05-29 14:51:51] FAILURE: Error: Page.screenshot: Timeout 25000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+[2026-05-29 15:37:50] SUCCESS: Form Submitted Successfully - Details Page Reached
