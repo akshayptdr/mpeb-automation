@@ -477,3 +477,5 @@ Call log:
 [2026-06-16 08:33:37] SUCCESS: Form Submitted Successfully - Details Page Reached
 [2026-06-16 11:31:14] SUCCESS: Form Submitted - URL Navigation Confirmed
 [2026-06-16 11:40:17] SUCCESS: Form Submitted - URL Navigation Confirmed
+[2026-06-16 11:42:21] FAILURE: Error: Page.query_selector_all: Target page, context or browser has been closed
+[2026-06-16 11:43:35] SUCCESS: Form Submitted - URL Navigation Confirmed
