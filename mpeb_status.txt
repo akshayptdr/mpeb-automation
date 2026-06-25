@@ -587,3 +587,10 @@ Call log:
   - taking page screenshot
   - waiting for fonts to load...
 
+[2026-06-25 19:15:06] FAILURE: Error: Page.query_selector_all: Target crashed 
+[2026-06-25 19:50:37] FAILURE: Error: Page.screenshot: Timeout 25000ms exceeded.
+Call log:
+  - taking page screenshot
+  - waiting for fonts to load...
+
+[2026-06-25 20:15:05] SUCCESS: Form Submitted - URL Navigation Confirmed
