@@ -615,3 +615,4 @@ Call log:
   - taking page screenshot
   - waiting for fonts to load...
 
+[2026-06-29 10:15:05] FAILURE: Error: Page.query_selector_all: Connection closed while reading from the driver
