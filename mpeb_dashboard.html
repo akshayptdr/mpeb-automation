@@ -223,11 +223,11 @@
         <div class="dashboard">
             <div class="stat-card total">
                 <h3>Total Runs</h3>
-                <div class="stat-value">584</div>
+                <div class="stat-value">585</div>
             </div>
             <div class="stat-card success">
                 <h3>Successes</h3>
-                <div class="stat-value">542</div>
+                <div class="stat-value">543</div>
             </div>
             <div class="stat-card failure">
                 <h3>Failures</h3>
@@ -241,12 +241,12 @@
 
         <div class="last-status">
             <h2>Last Run Status</h2>
-            <div class="status-box failure">
+            <div class="status-box success">
                 <div class="status-box-time">
-                    <span class="status-indicator failure"></span>
-                    2026-07-23 15:26:58
+                    <span class="status-indicator success"></span>
+                    2026-07-23 15:32:49
                 </div>
-                <div class="status-box-message">FAILURE: Applicant name not populated</div>
+                <div class="status-box-message">SUCCESS: Form Submitted Successfully - Details Page Reached</div>
             </div>
         </div>
 
@@ -258,8 +258,14 @@
         
 
         <div class="logs-container">
-            <h2>Recent Activity Log (584 entries)</h2>
+            <h2>Recent Activity Log (585 entries)</h2>
             
+        <div class="log-entry">
+            <span class="log-time">[2026-07-23 15:32:49]</span>
+            <span class="log-status success">SUCCESS</span>
+            <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
+        </div>
+        
         <div class="log-entry">
             <span class="log-time">[2026-07-23 15:26:58]</span>
             <span class="log-status failure">FAILURE</span>
@@ -554,16 +560,10 @@
             <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
         </div>
         
-        <div class="log-entry">
-            <span class="log-time">[2026-07-02 15:24:39]</span>
-            <span class="log-status success">SUCCESS</span>
-            <span class="log-message">Form Submitted Successfully - Details Page Reached</span>
-        </div>
-        
         </div>
 
         <div class="refresh-time">
-            Last updated: 2026-07-23 15:27:29
+            Last updated: 2026-07-23 15:33:15
             <br>
             <em>Dashboard auto-refreshes in browser. Refresh page to update from log file.</em>
         </div>
@@ -579,7 +579,7 @@
                 datasets: [
                     {
                         label: 'Successes',
-                        data: [2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 0, 0, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 0, 1, 2, 1, 0, 1, 2, 2, 1, 1, 1, 1, 0, 1, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 1, 0, 1, 0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 3, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 4, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 0, 1, 2, 2, 1, 0, 1, 1, 3, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 0, 1, 1, 1, 2, 0, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 0, 2, 0, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 2, 1, 1, 1, 0, 1, 2, 1, 1, 2, 2, 1, 0, 2, 2, 2, 1, 1, 1, 0],
+                        data: [2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 0, 0, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 0, 1, 2, 1, 0, 1, 2, 2, 1, 1, 1, 1, 0, 1, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 1, 0, 1, 0, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 3, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 4, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 0, 1, 2, 2, 1, 0, 1, 1, 3, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 0, 1, 1, 1, 2, 0, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 0, 2, 0, 1, 1, 2, 1, 2, 1, 1, 2, 1, 1, 1, 0, 0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 2, 1, 1, 1, 0, 1, 2, 1, 1, 2, 2, 1, 0, 2, 2, 2, 1, 1, 1, 1],
                         borderColor: '#27ae60',
                         backgroundColor: 'rgba(39, 174, 96, 0.1)',
                         borderWidth: 2,
